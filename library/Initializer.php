@@ -125,7 +125,7 @@ class Initializer
         echo sprintf(
             __('Sorry, %s requires %s . Please, install it.', 'publishpress-addon-framework'),
             $this->pluginName,
-            '<a href="https://wordpress.org/plugins/woocommerce" target="_blank">WooCommerce</a>',
+            '<a href="https://wordpress.org/plugins/woocommerce" target="_blank">WooCommerce</a>'
         );
         echo '</p></div>';
     }
