@@ -17,9 +17,9 @@ if (!function_exists('is_plugin_inactive')) {
 
 class Initializer
 {
-    const PUBLISHPRESS_FILE = '/publishpress/publishpress.php';
+    const PUBLISHPRESS_FILE = 'publishpress/publishpress.php';
 
-    const PUBLISHPRESS_PATH = WP_PLUGIN_DIR . self::PUBLISHPRESS_FILE;
+    const PUBLISHPRESS_PATH = WP_PLUGIN_DIR . '/' . self::PUBLISHPRESS_FILE;
 
     protected $pluginName;
 
