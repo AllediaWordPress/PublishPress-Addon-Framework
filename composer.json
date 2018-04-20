@@ -1,0 +1,15 @@
+{
+  "name": "publishpress/publishpress-addon-framework",
+  "type": "library",
+  "license": "GPL-2",
+  "authors": [
+    {
+      "name": "PublishPress",
+      "email": "help@publishpress.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "config": {
+    "preferred-install": "dist"
+  }
+}

@@ -1,0 +1,15 @@
+.svn
+.git
+.DS_Store
+wpcom-helper.php
+
+/local.sh
+node_modules
+
+/.properties.ini
+
+/packages
+/vendor
+/composer.lock
+.idea
+/dist
