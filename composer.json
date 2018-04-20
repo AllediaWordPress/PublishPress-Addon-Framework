@@ -8,6 +8,11 @@
       "email": "help@publishpress.com"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "PublishPressAddonFramework\\": "library/"
+    }
+  },
   "minimum-stability": "stable",
   "config": {
     "preferred-install": "dist"
