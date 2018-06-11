@@ -19,8 +19,6 @@ class Initializer
 {
     const PUBLISHPRESS_FILE = 'publishpress/publishpress.php';
 
-    const PUBLISHPRESS_PATH = WP_PLUGIN_DIR . '/' . self::PUBLISHPRESS_FILE;
-
     protected $pluginName;
 
     protected $minVersion;
@@ -45,8 +43,10 @@ class Initializer
      */
     public function isPublishPressInstalled()
     {
+        $publishpress_path = WP_PLUGIN_DIR . '/' . self::PUBLISHPRESS_FILE;
+
         // Check if PublishPress is installed.
-        if (!file_exists(self::PUBLISHPRESS_PATH) || is_plugin_inactive(self::PUBLISHPRESS_FILE)) {
+        if (!file_exists($publishpress_path) || is_plugin_inactive(self::PUBLISHPRESS_FILE)) {
             add_action('admin_notices', [$this, 'noticePublishPressNotFound']);
 
             return false;
@@ -54,7 +54,7 @@ class Initializer
 
         // Try to load PublishPress if not loaded yet.
         if (!defined('PUBLISHPRESS_VERSION')) {
-            require_once self::PUBLISHPRESS_PATH;
+            require_once $publishpress_path;
         }
 
         // Check PublishPress minimum version.
