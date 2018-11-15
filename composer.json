@@ -1,5 +1,5 @@
 {
-  "name": "alledia/publishpress-addon-framework",
+  "name": "alledia/publishpress-addon-library",
   "type": "library",
   "license": "GPL-2",
   "authors": [
@@ -17,7 +17,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "PublishPressAddonFramework\\": "library/"
+      "PublishPressAddonLibrary\\": "library/"
     }
   },
   "minimum-stability": "dev",

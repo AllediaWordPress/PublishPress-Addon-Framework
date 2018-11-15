@@ -2,14 +2,14 @@
 /**
  * Add-on initializer class.
  *
- * @package     PublishPressAddonFramework
+ * @package     PublishPressAddonLibrary
  * @author      PublishPress <help@publishpress.com>
  * @copyright   Copyright (C) 2018 PublishPress. All rights reserved.
  * @license     GPLv2 or later
  * @since       1.0.0
  */
 
-namespace PublishPressAddonFramework;
+namespace PublishPressAddonLibrary;
 
 if (!function_exists('is_plugin_inactive')) {
     include_once(ABSPATH . 'wp-admin/includes/plugin.php');
@@ -92,7 +92,7 @@ class Initializer
     {
         echo '<div class="notice notice-error is-dismissible"><p>';
         echo sprintf(
-            __('Please, install and activate the %s plugin in order to make %s work.', 'publishpress-addon-framework'),
+            __('Please, install and activate the %s plugin in order to make %s work.', 'publishpress-addon-library'),
             '<a href="https://wordpress.org/plugins/publishpress" target="_blank">PublishPress</a>',
             $this->pluginName
         );
@@ -108,7 +108,7 @@ class Initializer
     {
         echo '<div class="notice notice-error is-dismissible"><p>';
         echo sprintf(
-            __('Sorry, %s requires %s version %s or later.', 'publishpress-addon-framework'),
+            __('Sorry, %s requires %s version %s or later.', 'publishpress-addon-library'),
             $this->pluginName,
             '<a href="https://wordpress.org/plugins/publishpress" target="_blank">PublishPress</a>',
             $this->minVersion
@@ -123,7 +123,7 @@ class Initializer
     {
         echo '<div class="notice notice-error is-dismissible"><p>';
         echo sprintf(
-            __('Sorry, %s requires %s . Please, install it.', 'publishpress-addon-framework'),
+            __('Sorry, %s requires %s . Please, install it.', 'publishpress-addon-library'),
             $this->pluginName,
             '<a href="https://wordpress.org/plugins/woocommerce" target="_blank">WooCommerce</a>'
         );
