@@ -1,11 +1,18 @@
 {
-  "name": "publishpress/addon-framework",
+  "name": "alledia/publishpress-addon-framework",
   "type": "library",
   "license": "GPL-2",
   "authors": [
     {
-      "name": "PublishPress",
-      "email": "help@publishpress.com"
+      "name": "Alledia",
+      "email": "help@alledia.com",
+      "homepage": "https://alledia.com"
+    },
+    {
+      "name": "Anderson Grudtner Martins",
+      "email": "anderson@grudtner.me",
+      "homepage": "http://anderson.grudtner.me",
+      "role": "Lead Developer"
     }
   ],
   "autoload": {
@@ -13,8 +20,12 @@
       "PublishPressAddonFramework\\": "library/"
     }
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "config": {
     "preferred-install": "dist"
+  },
+  "require": {
+    "php": ">=5.6"
   }
 }
